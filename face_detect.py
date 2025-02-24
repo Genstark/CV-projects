@@ -27,7 +27,7 @@ while True:
 
     key = cv2.waitKey(1) & 0xFF
 
-    if key == ord('q'):
+    if key == ord('q') or cv2.getWindowProperty('Face Detection', cv2.WND_PROP_VISIBLE) < 1:
         break
 
 
